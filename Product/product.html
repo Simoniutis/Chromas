@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="lt" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Prekės langas </title>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="product.css">
+    </head>
+<body>
+    <div class="pagrindinis">
+        <!--VIRŠUTINIS NAVIGACIJOS LANGAS-->
+        <header class="header">
+            <h1 class="logo"><a href="#">CHROMAS</a></h1>
+          <ul class="main-nav">
+              <li><a href="#">Prisijungimas</a></li>
+              <li><a href="#">Registracija</a></li>
+              <!--<li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>-->
+          </ul>
+        </header> 
+        <!--VIDURYS-->
+        <div class="eilute">
+            <div class="stulpelis">
+                <div class="nuotraukos">
+                    <div class="pagrNuotrauka">
+                        <img src="Nuotraukos/nuotrauka1.jpg" id="pagrNuotrauka" alt="">
+                    </div>
+                    <div class="smallNuotraukos">
+                        <img src="Nuotraukos/nuotrauka1.jpg" alt=""
+                        onclick="clickme(this)">
+                        <img src="Nuotraukos/nuotrauka2.jpg" alt=""
+                        onclick="clickme(this)">
+                        <img src="Nuotraukos/nuotrauka3.jpg" alt=""
+                        onclick="clickme(this)">
+                        <img src="Nuotraukos/nuotrauka4.jpg" alt=""
+                        onclick="clickme(this)">
+                    </div>
+                </div>
+            </div>          
+            <div class="stulpelis stulpelis2">
+                <div class="turinys">
+                    <p class="tipas">Tipas</p>
+                    <h2>Pavadinimas testtesttesttest testtest testtesttest</h2>
+                    <p class="kaina">00.00 €</p>
+                    <button type="button">Įsiminti<i class="fa fa-heart"></i></button>
+                    <p class="prekesInfo">Jei paveikslėlis vertas tūkstančio žodžių, 
+                        ko verta žmonėms, kurie negali matyti? 
+                        Mūsų skaitmeniniame pasaulyje regos sutrikimų turinčioms žmonėms 
+                        lengva praleisti kritinę informaciją arba turėti nelinksmaus ir 
+                        neigiamos patirties. Įsivaizduokite, kad, pvz., 
+                        pagrindinis pranešėjas siunčia savo pateiktį po konferencijos. 
+                        Pateiktyje yra infografinių elementų, kurie iliustruoja pagrindinį 
+                        elementą. Be informacijos grafinių elementų aprašų visi, 
+                        kurie turi regos sutrikimų, negali suprasti informacijos grafinio 
+                        elemento ir nepaiso pagrindinės informacijos.
+                    </p>
+                </div>
+            </div>
+            <footer class="footer">
+                <h1>Chromas</h1>
+                <h2 class="apacia">Tekstas (angl. text, pranc. texte) – duomenys, 
+                    pateikiami ženklais, simboliais, žodžiais, žodžių junginiais, 
+                    sakiniais, pastraipomis, lentelėmis, išnašomis ar kitais ženklų 
+                    junginiais, parengti siekiant perteikti prasmę ir darant 
+                    prielaidą, jog jie suvokiami skaitytojų, mokančių tam tikrą 
+                    natūraliąją arba dirbtinę kalbą.
+                </h2>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function clickme(smallImg)
+        {
+            var pagrImg = document.getElementById("pagrNuotrauka");
+            pagrImg.src = smallImg.src;
+        }
+    </script>
+    
+    <!--Refreshinant, nukelia į viršų-->
+    <script>  
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }; 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.pagrindinis{
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+}
+.eilute{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.stulpelis{
+    margin-top: 10px;
+    flex-basis: 40%;
+}
+.eilute .stulpelis2{
+    margin-bottom: 70px;
+}
+.smallNuotraukos img{
+    height: 15vh;
+    width: 150px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.smallNuotraukos img:hover{
+    opacity: 1;
+}
+.pagrNuotrauka img{
+    height: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.tipas{
+    background: #076900;
+    width: fit-content;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin-bottom: 20px;;
+}
+h2{
+    font-size: 45px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.kaina{
+    color: #0a9200;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+button{
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #0a9200;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 10px;
+}
+button:hover{
+    background: #0cb400;
+}
+button:active{
+    transform: scale(0.95);;
+}
+.fa-heart{
+    margin-left: 10px;
+    /*margin-top: 5px;*/
+}
+.prekesInfo{
+    margin-top: 50px;
+}
+
+/*----------------------NAV BARAS--------------------------*/
+
+.header{
+	display: flex;
+    flex-wrap: wrap;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	/**min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;*/
+}
+ul {
+    display:flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+    width: 90%;
+    justify-content: end;
+}
+
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	/*text-transform: uppercase;*/
+	text-align: center;
+	display: block;
+    color: #4c4e00;
+}
+
+.main-nav a {
+	color: #6c7000;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #bdc400;
+}
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f6ff00;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/*---------APACIA------------*/
+.pagrindinis .footer{
+    background-color: #6e702c;
+    padding: 10px;
+}
+.footer h1{
+    color: #c3ca00;
+    font-size: 25px;
+}
+.footer h2{
+    font-size: 15px;
+    color: #bbbbbb;
+}
