@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Prisijungti</h1> 
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Prisijungimo vardas ar el.paštas">
+                <div class="form__input--error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Slaptažodis">
+                <div class="form__input--error-message"></div>
+            </div>
+            <p class="form__text">
+                <a href="#forgot_pswd" class="form__link">Pamiršau slaptažodį</a>
+            </p>
+
+            <div class="overlay" id="forgot_pswd">
+                <div class="wrapper">
+                    <h2>Keisti slaptažodį</h2>
+                    <a href="#" class="close">&times;</a>
+                    <div class="content">
+                        <div class="container">
+                            <form>
+                                <p class="form__email--msg">
+                                    <a> El. paštu Jums atsiųsime nuorodą, kurią paspaudę 
+                                        slaptažodį galėsite pakeisti
+                                    </a>
+                                </p>
+                                <input type="text" class="form__input" placeholder="El. paštas">
+                                <input type="submit" class="form__button" value="Siųsti">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="form__text">
+                <a href="#" class="form__link" id="linkCreateAccount">Kurti naują paskyrą</a>
+            </p>
+            <button class="form__button" type="submit">Tęsti</button>
+        </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>
