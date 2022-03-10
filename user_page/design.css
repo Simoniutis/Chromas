@@ -1,0 +1,255 @@
+	.mediaViewInfo {
+		--web-view-name: Web 1920 – 1;
+		--web-view-id: Web_1920__1;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Web_1920__1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Web_1920__1 {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Web 1920 – 1;
+		--web-view-id: Web_1920__1;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: fit;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#Rectangle_1 {
+		fill: rgba(246,255,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 140px;
+		left: 0px;
+		top: 79px;
+	}
+	#Component_1__1 {
+		position: absolute;
+		width: 162px;
+		height: 150px;
+		left: 54px;
+		top: 246px;
+		overflow: visible;
+	}
+	#istockphoto-1223671392-612x612 {
+		position: absolute;
+		width: 162px;
+		height: 150px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_2 {
+		fill: rgba(13,163,3,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 406px;
+		height: 70px;
+		left: 51px;
+		top: 470px;
+	}
+	#Prisijungimo_duomenys {
+		left: 73px;
+		top: 482px;
+		position: absolute;
+		overflow: visible;
+		width: 363px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(112,112,112,1);
+	}
+	#Rectangle_3 {
+		fill: rgba(13,163,3,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 605px;
+		height: 70px;
+		left: 1040px;
+		top: 286px;
+	}
+	#Prisijungimo_duomenys_m {
+		left: 73px;
+		top: 482px;
+		position: absolute;
+		overflow: visible;
+		width: 363px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(229,224,224,1);
+	}
+	#Parduodamos_preks {
+		left: 1162px;
+		top: 298px;
+		position: absolute;
+		overflow: visible;
+		width: 325px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(229,224,224,1);
+	}
+	#Chromas {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 436px;
+		height: 67px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		color: rgba(13,163,3,1);
+	}
+	#E_Patas {
+		left: 51px;
+		top: 603px;
+		position: absolute;
+		overflow: visible;
+		width: 385px;
+		height: 47px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(112,112,112,1);
+	}
+	#Slaptaodis {
+		left: 51px;
+		top: 662px;
+		position: absolute;
+		overflow: visible;
+		width: 385px;
+		height: 47px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(112,112,112,1);
+	}
+	#Keisti_duomenis {
+		left: 51px;
+		top: 736px;
+		position: absolute;
+		overflow: visible;
+		width: 385px;
+		height: 40px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(112,112,112,1);
+	}
+	#niclas-illg-wzVQp_NRIHg-unspla {
+		position: absolute;
+		width: 284px;
+		height: 274px;
+		left: 1040px;
+		top: 412px;
+		overflow: visible;
+	}
+	#niclas-illg-wzVQp_NRIHg-unspla_t {
+		position: absolute;
+		width: 276px;
+		height: 274px;
+		left: 1369px;
+		top: 412px;
+		overflow: visible;
+	}
+	#niclas-illg-wzVQp_NRIHg-unspla_u {
+		position: absolute;
+		width: 284px;
+		height: 274px;
+		left: 1040px;
+		top: 736px;
+		overflow: visible;
+	}
+	#niclas-illg-wzVQp_NRIHg-unspla_v {
+		position: absolute;
+		width: 284px;
+		height: 274px;
+		left: 1369px;
+		top: 736px;
+		overflow: visible;
+	}
+	#Pagrindinis_puslapis {
+		left: 1486px;
+		top: 34px;
+		position: absolute;
+		overflow: visible;
+		width: 286px;
+		height: 40px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(112,112,112,1);
+	}
+
+
+Messages:
+1. Exported image: istockphoto-1223671392-612x612.png (9.2k)
+2. Exported image: istockphoto-1223671392-612x612@2x.png (23.2k)
+3. Exported image: niclas-illg-wzVQp_NRIHg-unspla.png (136.5k)
+4. Exported image: niclas-illg-wzVQp_NRIHg-unspla@2x.png (475k)
+5. Exported image: niclas-illg-wzVQp_NRIHg-unspla_t.png (133.1k)
+6. Exported image: niclas-illg-wzVQp_NRIHg-unspla_t@2x.png (463.3k)
+7. Exported image: niclas-illg-wzVQp_NRIHg-unspla_u.png (136.5k)
+8. Exported image: niclas-illg-wzVQp_NRIHg-unspla_u@2x.png (475k)
+9. Exported image: niclas-illg-wzVQp_NRIHg-unspla_v.png (136.5k)
+10. Exported image: niclas-illg-wzVQp_NRIHg-unspla_v@2x.png (475k)
+11. Exported image: Total image size 551.8k
