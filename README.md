@@ -1,7 +1,7 @@
 # Chromas
 Programavimo inžinerijos modulio laboratorinis darbas.<br />
 #### Emilijos kodas<br />
-+ log_in
++ Register/login*
 #### Eimanto kodas<br />
 + main
 + add_item
