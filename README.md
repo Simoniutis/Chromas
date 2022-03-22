@@ -5,6 +5,7 @@ Programavimo inžinerijos modulio laboratorinis darbas.<br />
 #### Eimanto kodas<br />
 + main
 + add_item
++ category_search
 #### Arno kodai<br />
 + Register
 + Product
