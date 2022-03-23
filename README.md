@@ -2,6 +2,7 @@
 Programavimo inžinerijos modulio laboratorinis darbas.<br />
 #### Emilijos kodas<br />
 + Register/login*
++ Register/send.php
 #### Eimanto kodas<br />
 + main
 + add_item
