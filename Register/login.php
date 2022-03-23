@@ -36,8 +36,8 @@
                                             slaptažodį galėsite pakeisti
                                         </a>
                                     </p>
-                                    <input type="text" class="form__input" placeholder="El. paštas">
-                                    <button class="form__button">Siųsti</button>
+                                    <input type="text" name="email" id="email" class="form__input" placeholder="El. paštas">
+                                    <button name="send" id="send" class="form__button">Siųsti</button>
                                 </form>
                             </div>
                         </div>
@@ -53,6 +53,7 @@
 </html>
 
 <script>
+    // Verifying email and password
     $(document).ready(function(){
     $('#login').click(function(){
     var username = $('#username').val();
@@ -78,6 +79,20 @@
             }
         });
     } else {}
-});
+    });
+    // Sending email if 'Forgot password'
+    $('#send').click(function(){
+        var email = $('#email').val();
+        var varData = 'email=' + email;
+        
+        $.ajax({
+            type: "POST",
+            url: 'send.php',
+            data: varData,
+            success: function() {
+                alert("Išsiuntėme laišką nurodytu el.paštu - patikrinkite savo el.pašto dėžutę");
+            }
+        });
+    });
 });
 </script>
