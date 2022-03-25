@@ -17,6 +17,9 @@ if (!empty($vardas) || !empty($pavarde) || !empty($el_pastas) ||
 
     if (mysqli_connect_error())
     {
+        $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
+        ');';
+        
         die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
     }
     else
