@@ -1,6 +1,10 @@
 <?php
 require_once('DB.php');
-$db=new DB();
+
+$db = new DB();
+$data = $db->searchData("");
+
+// var_dump($data);
 ?>
 
 <!DOCTYPE html>
@@ -13,11 +17,15 @@ $db=new DB();
 </head>
 <body>
    <h1>Paieska</h1> 
-   <form action="DB.php" method="POST">
-       <input type="text" name="name" placeholder="Atlikite paieska" id="searchBox">
+   <form action="search.php" method="POST">
+       <input type="text" name="name" placeholder="Atlikite paieska" id="searchBox" oniput=search(this.value)>
    </form>
-   <ul id="dataviewer">
-       <il>Name</il>
+
+   <ul id="dataViewer">
+       <?php foreach($data as $i) { ?>
+       <li><?php echo $i["vardas"]; }?></li> 
    </ul>
+
+   <script src="main.js"></script>
 </body>
 </html>
