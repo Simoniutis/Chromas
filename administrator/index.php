@@ -13,7 +13,7 @@ $db=new DB();
 </head>
 <body>
    <h1>Paieska</h1> 
-   <form action="search.php" method="POST">
+   <form action="DB.php" method="POST">
        <input type="text" name="name" placeholder="Atlikite paieska" id="searchBox">
    </form>
    <ul id="dataviewer">
