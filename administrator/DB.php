@@ -13,7 +13,7 @@ class DB{
         try{
             $this-> con=new PDO($dsn, $this->dbUsername, $this -> dbPassword);
             $this-> con-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "pavyko prisijungti";
+            echo "pavyko prisijungti"; // ar reikia?
         }
         catch(PDOException $e){
             echo "nepavyko prisijungti: " . $e->getMessage();
@@ -27,9 +27,26 @@ class DB{
         $data= $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $data;
     }
+   
+    public function viewDataItems(){
+        print("all good");
+        $query = "SELECT * FROM chromas.prekės";
+        $stmt = $this ->con->prepare($query);
+        $stmt ->execute();
+        $data= $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
+    }
 
     public function searchData($name){
         $query = "SELECT vardas FROM chromas.klientai WHERE vardas LIKE :name";
+        $stmt = $this->con->prepare($query);
+        $stmt->execute(["name"=> "%" . $name . "%"]);
+        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
+    }
+   
+    public function searchDataItems($name){
+        $query = "SELECT * FROM chromas.prekes WHERE pavadinimas LIKE :name";
         $stmt = $this->con->prepare($query);
         $stmt->execute(["name"=> "%" . $name . "%"]);
         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
