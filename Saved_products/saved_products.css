@@ -113,14 +113,14 @@ a {
 }
 
 .main-nav {
-	margin-top: 5px;
+    margin-top: 5px;
     width: 95%;
     justify-content: end;
 }
 
 .logo a,
 .main-nav a {
-	padding: 10px 15px;
+	padding: 5px 5px;
 	/*text-transform: uppercase;*/
 	text-align: start;
 	display: block;
@@ -128,14 +128,30 @@ a {
 }
 
 .main-nav a {
-	color: #ffffff;
+	color: #0a9200;
 	font-size: .99em;
-    background: #0a9200;
-    border-radius: 10px;
+    font-weight: bold;
 }
 
 .main-nav a:hover {
-	color: #0cb400;;
+	color: #0cb400;
+}
+
+.main-nav i {
+    background-color: #0a9200;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #0a9200;
+    padding: 10px 10px;
+    margin-left: 50px;
+}
+
+i:hover {
+	color: #0cb400;
+}
+
+.nav1{
+    margin-top: 5px;
 }
 
 .header {

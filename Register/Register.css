@@ -10,7 +10,8 @@ body{
     margin-top: 100px;
     justify-content: center;
     align-items: center;
-    background: #098000ab;
+    /*background: #098000ab;*/
+    background-image: linear-gradient(#f6ff00, #098000ab);
 }
 .container{
     background: #ffffff;
