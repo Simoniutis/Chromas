@@ -58,7 +58,7 @@ h2{
     font-weight: bold;
     padding-top: 10px;
 }
-button{
+.button{
     color: #fff;
     font-size: 15px;
     outline: none;
@@ -84,11 +84,21 @@ button:active{
     margin-top: 50px;
 }
 
+h3{
+    color: #0a9200;
+    margin-top: 10px;
+}
+
+.TelNr{
+    color: #076900;
+}
+
 /*----------------------NAV BARAS--------------------------*/
 
 .header{
 	display: flex;
     flex-wrap: wrap;
+    height: 50px;
 }
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -112,30 +122,49 @@ a {
 .logo {
 	margin: 0;
 	font-size: 1.45em;
+    font-size: 50px;
 }
 
 .main-nav {
 	margin-top: 5px;
-    width: 90%;
+    width: 95%;
     justify-content: end;
 }
 
 .logo a,
 .main-nav a {
-	padding: 10px 15px;
+	padding: 5px 5px;
 	/*text-transform: uppercase;*/
-	text-align: center;
+	text-align: start;
 	display: block;
-    color: #4c4e00;
+    color: #0a9200;
 }
 
 .main-nav a {
-	color: #6c7000;
+	color: #0a9200;
 	font-size: .99em;
+    font-weight: bold;
 }
 
 .main-nav a:hover {
-	color: #bdc400;
+	color: #0cb400;
+}
+
+.main-nav i {
+    background-color: #0a9200;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #0a9200;
+    padding: 10px 10px;
+    margin-left: 50px;
+}
+
+i:hover {
+	color: #0cb400;
+}
+
+.nav1{
+    margin-top: 5px;
 }
 
 .header {
