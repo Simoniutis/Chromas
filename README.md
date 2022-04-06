@@ -11,3 +11,6 @@ Programavimo inžinerijos modulio laboratorinis darbas.<br />
 + Register
 + Product
 + Saved_Products
+#### Agnes kodai<br />
++ user_page
++ administartor
