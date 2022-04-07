@@ -15,6 +15,7 @@
 		box-sizing: border-box;
 		border: none;
 	}
+	
 	#Web_1920__1 {
 		position: absolute;
 		width: 1920px;
@@ -78,7 +79,7 @@
 		left: 51px;
 		top: 470px;
 	}
-	#Prisijungimo_duomenys {
+	.Prisijungimo_duomenys {
 		left: 73px;
 		top: 482px;
 		position: absolute;
@@ -109,7 +110,7 @@
 		left: 1040px;
 		top: 286px;
 	}
-	#Prisijungimo_duomenys_m {
+	.Prisijungimo_duomenys_m {
 		left: 73px;
 		top: 482px;
 		position: absolute;
@@ -123,7 +124,7 @@
 		font-size: 35px;
 		color: rgba(229,224,224,1);
 	}
-	#Parduodamos_preks {
+	.Parduodamos_preks {
 		left: 1162px;
 		top: 298px;
 		position: absolute;
@@ -137,7 +138,7 @@
 		font-size: 35px;
 		color: rgba(229,224,224,1);
 	}
-	#Chromas {
+	.Chromas {
 		left: 0px;
 		top: 0px;
 		position: absolute;
@@ -151,9 +152,10 @@
 		font-size: 50px;
 		color: rgba(13,163,3,1);
 	}
-	#E_Patas {
+
+	.Vartojo_Vardas{
 		left: 51px;
-		top: 603px;
+		top: 600px;
 		position: absolute;
 		overflow: visible;
 		width: 385px;
@@ -165,7 +167,7 @@
 		font-size: 35px;
 		color: rgba(112,112,112,1);
 	}
-	#Slaptaodis {
+	.E_Pastas{
 		left: 51px;
 		top: 662px;
 		position: absolute;
@@ -179,9 +181,23 @@
 		font-size: 35px;
 		color: rgba(112,112,112,1);
 	}
-	#Keisti_duomenis {
+	.Slaptaodis {
 		left: 51px;
-		top: 736px;
+		top: 721px;
+		position: absolute;
+		overflow: visible;
+		width: 385px;
+		height: 47px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(112,112,112,1);
+	}
+	.Keisti_duomenis {
+		left: 51px;
+		top: 780px;
 		position: absolute;
 		overflow: visible;
 		width: 385px;
@@ -192,6 +208,8 @@
 		font-weight: normal;
 		font-size: 30px;
 		color: rgba(112,112,112,1);
+		display: inline-block;
+		cursor: pointer;
 	}
 	#niclas-illg-wzVQp_NRIHg-unspla {
 		position: absolute;
@@ -225,31 +243,107 @@
 		top: 736px;
 		overflow: visible;
 	}
-	#Pagrindinis_puslapis {
+	.Pagrindinis_puslapis {
 		left: 1486px;
 		top: 34px;
 		position: absolute;
 		overflow: visible;
 		width: 286px;
-		height: 40px;
+		height: 80px;
 		text-align: left;
 		font-family: Segoe UI;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 30px;
 		color: rgba(112,112,112,1);
+		display: inline-block;
+		cursor: pointer;
 	}
 
+	.button {
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
 
-Messages:
-1. Exported image: istockphoto-1223671392-612x612.png (9.2k)
-2. Exported image: istockphoto-1223671392-612x612@2x.png (23.2k)
-3. Exported image: niclas-illg-wzVQp_NRIHg-unspla.png (136.5k)
-4. Exported image: niclas-illg-wzVQp_NRIHg-unspla@2x.png (475k)
-5. Exported image: niclas-illg-wzVQp_NRIHg-unspla_t.png (133.1k)
-6. Exported image: niclas-illg-wzVQp_NRIHg-unspla_t@2x.png (463.3k)
-7. Exported image: niclas-illg-wzVQp_NRIHg-unspla_u.png (136.5k)
-8. Exported image: niclas-illg-wzVQp_NRIHg-unspla_u@2x.png (475k)
-9. Exported image: niclas-illg-wzVQp_NRIHg-unspla_v.png (136.5k)
-10. Exported image: niclas-illg-wzVQp_NRIHg-unspla_v@2x.png (475k)
-11. Exported image: Total image size 551.8k
+	.header{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	body {
+		font-family: 'Montserrat', sans-serif;
+		line-height: 1.6;
+		margin: 0;
+		/**min-height: 100vh;
+		display: flex;
+		flex-wrap: wrap;*/
+	}
+	ul {
+		display:flex;
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	}
+	
+	a {
+		text-decoration: none;
+	}
+	
+	.logo {
+		margin: 0;
+		font-size: 1.45em;
+	}
+	
+	.main-nav {
+		margin-top: 5px;
+		width: 90%;
+		justify-content: end;
+	}
+	
+	.logo a,
+	.main-nav a {
+		padding: 10px 15px;
+		text-transform: uppercase;
+		text-align: center;
+		display: block;
+		color: #dddddd;
+	}
+	.main-nav a {
+		color: #6bb666;
+		font-size: .99em;
+	}
+	
+	.main-nav a:hover {
+		color: #a7a7a7;
+	}
+	
+	.header {
+		padding-top: .5em;
+		padding-bottom: .5em;
+		border: 1px solid #a7a7a7;
+		background-color: #054700;
+		-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	/* Messages:
+	1. Exported image: istockphoto-1223671392-612x612.png (9.2k)
+	2. Exported image: istockphoto-1223671392-612x612@2x.png (23.2k)
+	3. Exported image: niclas-illg-wzVQp_NRIHg-unspla.png (136.5k)
+	4. Exported image: niclas-illg-wzVQp_NRIHg-unspla@2x.png (475k)
+	5. Exported image: niclas-illg-wzVQp_NRIHg-unspla_t.png (133.1k)
+	6. Exported image: niclas-illg-wzVQp_NRIHg-unspla_t@2x.png (463.3k)
+	7. Exported image: niclas-illg-wzVQp_NRIHg-unspla_u.png (136.5k)
+	8. Exported image: niclas-illg-wzVQp_NRIHg-unspla_u@2x.png (475k)
+	9. Exported image: niclas-illg-wzVQp_NRIHg-unspla_v.png (136.5k)
+	10. Exported image: niclas-illg-wzVQp_NRIHg-unspla_v@2x.png (475k)
+	11. Exported image: Total image size 551.8k */
