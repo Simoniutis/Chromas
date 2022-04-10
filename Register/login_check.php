@@ -1,5 +1,7 @@
 <?php
-    session_start();
+     session_start();
+    echo "test";
+
     $connect = mysqli_connect("localhost", "root", "", "chromas");
     if(isset($_POST["username"]) && isset($_POST["password"])) {
         $username = mysqli_real_escape_string($connect, $_POST["username"]);
@@ -9,8 +11,10 @@
         $num_row = mysqli_num_rows($result);
         if($num_row > 0)    {
             $data = mysqli_fetch_array($result);
-            $_SESSION["username"] = $data["username"];
-            echo $data["username"];
+            $_SESSION['vardas'] = $data['vardas'];
+            $_SESSION['pavarde'] = $data['pavarde'];
+            $_SESSION['el_pastas'] = $data['el_pastas'];
+            $_SESSION['slaptazodis'] = $data['slaptazodis'];
         }
     }
 ?>
