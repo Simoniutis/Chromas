@@ -4,7 +4,8 @@ Programavimo inžinerijos modulio laboratorinis darbas.<br />
 + Register/login*
 + Register/send.php
 + administrator/*_items.php
-+ administrator/dellete.php
++ administrator/*_favourite_items.php
++ administrator/style.css
 #### Eimanto kodas<br />
 + main
 + add_item
