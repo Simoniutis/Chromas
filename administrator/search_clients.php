@@ -140,7 +140,7 @@ body{
 
 <div class="container">
 <p class="form__text-search">
-    <a class="form__link-search" href="./index_items.php" id="items">Grįžti</a>
+    <a class="form__link-search" href="./index_clients.php" id="items">Grįžti</a>
 </p>
 <table class="form__table">
   <tr>
