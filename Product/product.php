@@ -51,11 +51,11 @@ if(isset($_POST['isiminti'])){
 <body>
     <div class="pagrindinis">
         <!--VIRŠUTINIS NAVIGACIJOS LANGAS-->
-        <h1 class="logo"><a href="../main/index.html">Chromas</a></h1>
+        <h1 class="logo"><a href="../main/index.php">Chromas</a></h1>
         <header class="header">
             <ul class="main-nav">
                 <li><a href="../saved_products/saved_products.php" class="nav1">Įsimintos prekės</a></li>
-                <li><a href="../user_page/vartotojolangas.html"><i class="fa fa-user-circle"></i></a></li>
+                <li><a href="../user_page/vartotojolangas.php"><i class="fa fa-user-circle"></i></a></li>
                 <li><a href="logout.php">logout</i></a></li>
                 <!--<li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>-->
@@ -73,14 +73,14 @@ if(isset($_POST['isiminti'])){
                     <div class="stulpelis">
                         <div class="nuotraukos">
                             <div class="pagrNuotrauka">
-                                <img src="Nuotraukos/<?php echo $row["Filename"]; ?>" id="pagrNuotrauka" alt="">
+                                <img src="../add_item/uploads/<?php echo $row["Filename"]; ?>" id="pagrNuotrauka" alt="">
                             </div>
                             <div class="smallNuotraukos">
-                                <img src="Nuotraukos/<?php echo $row["Filename"]; ?>" alt=""
+                                <img src="../add_item/uploads/<?php echo $row["Filename"]; ?>" alt=""
                                 onclick="clickme(this)">
-                                <img src="Nuotraukos/<?php echo $row["Filename_second"]; ?>" alt=""
+                                <img src="../add_item/uploads/<?php echo $row["Filename_second"]; ?>" alt=""
                                 onclick="clickme(this)">
-                                <img src="Nuotraukos/<?php echo $row["Filename_third"]; ?>" alt=""
+                                <img src="../add_item/uploads/<?php echo $row["Filename_third"]; ?>" alt=""
                                 onclick="clickme(this)">
                             </div>
                         </div>
