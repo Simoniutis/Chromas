@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <html>
     <head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -68,6 +72,7 @@
                 if (data) {
                     // if data is correct - wip
                     $('#error').html("<span class='text-danger'>Data accepted</span>");
+                    console.log("succesful")
                     window.location.href = "home.php";
                 } else {
                     var options = {
