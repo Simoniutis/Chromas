@@ -59,7 +59,7 @@ if(isset($_GET['remove'])){
                 <tr>
                     <td><a href="saved_products.php?remove=<?php echo $fetch_cart['id_isiminta_preke']; ?>" 
                     class="pasalinimoMygtukas" name="pasalinti" onclick="return confirm('Ar tikrai norite pašalinti?');"><i class="fa fa-times-circle"></i></a></td>
-                    <td> <img src="Nuotraukos/nuotrauka1.jpg" alt=""></td>
+                    <td> <img src="Nuotraukos/<?php echo $fetch_cart["nuotrauka"]; ?>" alt=""></td>
                     <td><a class="pavadinimas" href="#"><?php echo $fetch_cart['pavadinimas']; ?></a></td>
                     <td><?php echo $fetch_cart['kaina']; ?>€</td>
                     <td><?php echo $fetch_cart['tel_nr']; ?></td>
@@ -73,7 +73,7 @@ if(isset($_GET['remove'])){
                 }
             }
             else{
-                echo '<tr><td style="padding:20px; text-transform:capitalize;" colspan="6">Prekių nėra</td></tr>';
+                echo '<tr><td style="padding:20px; text-transform:capitalize; color:DimGrey;" colspan="6">Prekių nėra</td></tr>';
             }
             ?>
             </tbody>
