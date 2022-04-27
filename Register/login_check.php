@@ -15,6 +15,7 @@
             $_SESSION['pavarde'] = $data['pavarde'];
             $_SESSION['el_pastas'] = $data['el_pastas'];
             $_SESSION['slaptazodis'] = $data['slaptazodis'];
+            $_SESSION['user_id'] = $data["id_klientas"];
         }
     }
 ?>
