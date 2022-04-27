@@ -58,40 +58,45 @@
                     <input type="submit" onclick="validation()" value="Registruotis">
                 </div>
                 <div class="turiPaskyra">
-                    <a href="./login.html">Turite paskyrą? Prisijungti</a>
+                    <a href="./login.php">Turite paskyrą? Prisijungti</a>
                 </div>
             </div>
         </form>
         
         <!-- Trigger/Open The Modal -->
-        <button class="salyguMygtukas" id="myBtn">Peržiūrėti puslapio salygas</button>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-        <span class="close">&times;</span>
-        <h4>Sutikimas naudoti svetainę</h4>
-        <p>Apskritai netoleruojame svetainės naudojimo tais tikslais, 
-            kuriais būtų galima padaryti mums turtinės žalos, pakenkti 
-            mūsų reputacijai, svetainės prieinamumui ar vientisumui ir t.t. 
-            Chromas interneto svetaine galite naudotis tik teisėtais tikslais.
-        </p>
-        <p>Chromas pasilieka teisę sustabdyti svetainės naudojimą ar apskritai 
-            užblokuoti tam tikro vartotojo prieigą, jei bus pastebėtas 
-            bet koks piktnaudžiavimas suteiktomis teisėmis. Apie pastebėtą 
-            piktnaudžiavimą gali būti pranešta atitinkamoms institucijoms. 
-            Taip pat pasiliekame teisę atskleisti visus įrodymus apie galimą 
-            piktnaudžiavimą svetaine.
-        </p> 
-        <h4>Naudojimasis svetaine</h4>
-        <p>Jūs sutinkate nenaudoti svetainės arba sustabdyti prieigą prie jos, jei:</p>
-        <p>· gavote neteisėtą prieigą prie svetainės serverių ar duomenų bazės;</p>
-        <p>· galite sukelti pavojų svetainės veikimo vientisumui;</p>
-        <p>· galite sukelti pavojų telekomunikacijų tinklo veikimui, kokybei ir vientisumui;</p>
-        <p>· neteisėtai siekiate rinkti informaciją apie kitus vartotojus;</p>
-        <p>· norite platinti, atsiųsti, perduoti medžiagą, kurioje yra virusų ar kitų kenksmingų komponentų;</p>
-        <p>· norite naudoti patalpintą informaciją komerciniais tikslais.</p>
+        <div class="box">
+            <a class="salyguMygtukas" href="#popup1">Peržiūrėti puslapio salygas</a>
         </div>
+        
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h4>Sutikimas naudoti svetainę</h4>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>Apskritai netoleruojame svetainės naudojimo tais tikslais, 
+                        kuriais būtų galima padaryti mums turtinės žalos, pakenkti 
+                        mūsų reputacijai, svetainės prieinamumui ar vientisumui ir t.t. 
+                        Chromas interneto svetaine galite naudotis tik teisėtais tikslais.
+                    </p>
+                    <p>Chromas pasilieka teisę sustabdyti svetainės naudojimą ar apskritai 
+                        užblokuoti tam tikro vartotojo prieigą, jei bus pastebėtas 
+                        bet koks piktnaudžiavimas suteiktomis teisėmis. Apie pastebėtą 
+                        piktnaudžiavimą gali būti pranešta atitinkamoms institucijoms. 
+                        Taip pat pasiliekame teisę atskleisti visus įrodymus apie galimą 
+                        piktnaudžiavimą svetaine.
+                    </p> 
+                    <h4>Naudojimasis svetaine</h4>
+                    <p>Jūs sutinkate nenaudoti svetainės arba sustabdyti prieigą prie jos, jei:</p>
+                    <p>· gavote neteisėtą prieigą prie svetainės serverių ar duomenų bazės;</p>
+                    <p>· galite sukelti pavojų svetainės veikimo vientisumui;</p>
+                    <p>· galite sukelti pavojų telekomunikacijų tinklo veikimui, kokybei ir vientisumui;</p>
+                    <p>· neteisėtai siekiate rinkti informaciją apie kitus vartotojus;</p>
+                    <p>· norite platinti, atsiųsti, perduoti medžiagą, kurioje yra virusų ar kitų kenksmingų komponentų;</p>
+                    <p>· norite naudoti patalpintą informaciją komerciniais tikslais.</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--<footer class="footer">
