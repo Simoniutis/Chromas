@@ -7,9 +7,9 @@ Programavimo inžinerijos modulio laboratorinis darbas.<br />
 + administrator/*_favourite_items.php
 + administrator/style.css
 #### Eimanto kodas<br />
-+ main
-+ add_item
-+ category_search
++ main (search)
++ add_item (search)
++ category_search 
 #### Arno kodai<br />
 + Register
 + Product
