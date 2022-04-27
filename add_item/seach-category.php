@@ -10,18 +10,14 @@ if(isset($_POST['patvirtinti'])){
     if(!empty($_POST['pavadinimas']) && !empty($_POST['kaina']) &&
         !empty($_POST['telefonas']) && !empty($_POST['miestas']) && !empty($_POST['adresas'])) {
         $filename = $_FILES["choosefile"]["name"];
-        $filename_second = $_FILES["choosefile1"]["name"];
-        $filename_third = $_FILES["choosefile2"]["name"];
-        
-        $folder = "uploads/";
-        $first = $folder . basename($filename);
-        $seocnd = $folder . basename($filename_second);
-        $third = $folder . basename($filename_third);
-
         $tempname = $_FILES["choosefile"]["tmp_name"];
+        $filename_second = $_FILES["choosefile1"]["name"];
         $tempname_second = $_FILES["choosefile1"]["tmp_name"];
+        $filename_third = $_FILES["choosefile2"]["name"];
         $tempname_third = $_FILES["choosefile2"]["tmp_name"];
-        
+        $folder = "uploads/".$filename;
+        $folder_second = "uploads/".$filename_second;
+        $folder_third = "uploads/".$filename_third;
                     $pavadinimas = $_POST["pavadinimas"];
                      $aprasymas = trim($_POST['aprasymas']);
                     $kategorija = $_POST["kategorija"];
@@ -34,15 +30,19 @@ if(isset($_POST['patvirtinti'])){
                    '$bukle', '$kaina', '$telefonas', '$miestas', '$adresas', '$filename', '$aprasymas', '$filename_second', '$filename_third')";
                     $run = mysqli_query($conn, $query) or die(mysqli_error());
                     if ($run) {
-                        echo "<script> location.href='http://localhost/Mano/main/index.php'; </script>";
-                        exit;
+                        echo "Pavyko";
                         
                     } else {
                         echo "Error";
                     }
-                     move_uploaded_file($tempname, $first);
-                       move_uploaded_file($tempname_second , $seocnd);
-                           move_uploaded_file($tempname_third, $third);
+                  if (move_uploaded_file($tempname, $folder)) {
+
+                       $msg = "Image uploaded successfully";
+
+                  }else{
+
+                    $msg = "Failed to upload image";
+                  }
     }
     else {
         echo "Error";

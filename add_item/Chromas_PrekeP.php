@@ -37,7 +37,7 @@
 
 <div id="Web_1920__1">
 
-    
+
     <div id="Chromas">
         <span>Chromas</span>
     </div>
@@ -46,7 +46,14 @@
         <rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1900" height="140">
         </rect>
     </svg>
-    
+    <input type="image" name="paieska" alt=""
+           src="https://cdn.icon-icons.com/icons2/2551/PNG/512/search_icon_152764.png">
+    <form action="search.php" metod="get">
+        <div class="autocomplete">
+            <input type="text99" name="search" placeholder="Paieška" >
+        </div>
+        <button name="submit" id="slapta">ss</button>
+    </form>
     <svg class="Rectangle_5">
         <rect id="Rectangle_5" rx="0" ry="0" x="0" y="0" width="1900" height="110">
         </rect>
@@ -69,7 +76,7 @@
         <rect id="Rectangle_10" rx="20" ry="20" x="0" y="0" width="1680" height="385">
         </rect>
     </svg>
-	
+
 
 	<div id="IkeltiNuotraukas">
         <span>Įkelkite nuotraukas</span>
@@ -83,7 +90,10 @@
 	<div class = "image-preview2" id="image-preview2">
 		<img id="uploadPreview2" style="width: 400px; height: 200px;" />
 	</div>
-    <button class="button button2" name="atsaukti" >Atšaukti</button>
+    <form action = "/Mano/main/index.php"" method="post">
+        <button class="button button2" name="atsaukti" >Atšaukti</button>
+    </form>
+
 	<form class="" action="item.php" method="post" autocomplete="off" enctype="multipart/form-data">
 
         <button class="button button1" name="patvirtinti">Įkelti prekę</button>
@@ -175,17 +185,8 @@
 		<path id="Line_5" d="M 0 0 L 1680 0">
 		</path>
 	</svg>
-    <form autocomplete="off" action="second.html">
-        <div class="autocomplete">
-            <input id="myInput" type="text45" name="myCountry" placeholder="Paieška">
-        </div>
-        <input type="image" name="submit" src="https://cdn.icon-icons.com/icons2/2551/PNG/512/search_icon_152764.png"  alt=""  />
-    </form>
 
-    <script type="text/javascript" src="java.js"></script>
-    <script language="javascript">
-        autocomplete(document.getElementById("myInput"));
-    </script>
+
 	 
     
    
