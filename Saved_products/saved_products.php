@@ -25,11 +25,11 @@ if(isset($_GET['remove'])){
     </head>
 <body>
     <!--VIRŠUTINIS NAVIGACIJOS LANGAS-->
-    <h1 class="logo"><a href="../main/index.html">Chromas</a></h1>
+    <h1 class="logo"><a href="../main/index.php">Chromas</a></h1>
         <header class="header">
             <ul class="main-nav">
                 <li><a href="../saved_products/saved_products.php" class="nav1">Įsimintos prekės</a></li>
-                <li><a href="../user_page/vartotojolangas.html"><i class="fa fa-user-circle"></i></a></li>
+                <li><a href="../user_page/vartotojolangas.php"><i class="fa fa-user-circle"></i></a></li>
 
                 <!--<li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>-->
@@ -59,7 +59,7 @@ if(isset($_GET['remove'])){
                 <tr>
                     <td><a href="saved_products.php?remove=<?php echo $fetch_cart['id_isiminta_preke']; ?>" 
                     class="pasalinimoMygtukas" name="pasalinti" onclick="return confirm('Ar tikrai norite pašalinti?');"><i class="fa fa-times-circle"></i></a></td>
-                    <td> <img src="Nuotraukos/<?php echo $fetch_cart["nuotrauka"]; ?>" alt=""></td>
+                    <td> <img src="../add_item/uploads/<?php echo $fetch_cart["nuotrauka"]; ?>" alt=""></td>
                     <td><a class="pavadinimas" href="#"><?php echo $fetch_cart['pavadinimas']; ?></a></td>
                     <td><?php echo $fetch_cart['kaina']; ?>€</td>
                     <td><?php echo $fetch_cart['tel_nr']; ?></td>
