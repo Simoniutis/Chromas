@@ -2,7 +2,7 @@
 $host = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbname = "chromas";
+$dbname = "chromas2";
 
 $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
 

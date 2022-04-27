@@ -11,13 +11,14 @@ if (isset($_GET['id']))
     $id = $_GET['id'];
 }
 
-$sql_query = "SELECT * FROM prekes WHERE id_preke = $id";
+$sql_query = "SELECT * FROM prekes_ikelimas WHERE id = $id";
 $result=$conn->query($sql_query);
-
+$websiteErr = "";
 if(isset($_POST['isiminti'])){
    if(!isset($user_id)){ 
-    echo '<script> alert("Negalima įsiminti neprisijungus");</script>';
+    $websiteErr = "Negalima įsiminti neprisijungus!";
    }else{
+    $product_nuotrauka = $_POST['product_nuotrauka']; 
     $product_pavadinimas = $_POST['product_pavadinimas'];
     $product_kaina = $_POST['product_kaina'];
     $product_aprasas = $_POST['product_aprasas'];
@@ -26,11 +27,11 @@ if(isset($_POST['isiminti'])){
     $select_cart = mysqli_query($conn, "SELECT * FROM `isimintos_prekes` WHERE pavadinimas = '$product_pavadinimas' AND pirkejo_id = '$user_id'") or die('query failed');
  
     if(mysqli_num_rows($select_cart) > 0){
-       echo '<script> alert("Ši prekė jau yra įsiminta!");</script>';
+        $websiteErr = "Ši prekė jau yra įsiminta!";
     }else{
-       mysqli_query($conn, "INSERT INTO `isimintos_prekes`(pirkejo_id, pavadinimas, kaina, tel_nr) 
-       VALUES('$user_id', '$product_pavadinimas', '$product_kaina', '$product_tel_nr')") or die('query failed');
-       echo '<script> alert("Prekė įsiminta!");</script>';
+       mysqli_query($conn, "INSERT INTO `isimintos_prekes`(pirkejo_id, nuotrauka, pavadinimas, kaina, tel_nr) 
+       VALUES('$user_id', '$product_nuotrauka', '$product_pavadinimas', '$product_kaina', '$product_tel_nr')") or die('query failed');
+       $websiteErr = "Prekė įsiminta!";
     }
    }
  
@@ -72,34 +73,34 @@ if(isset($_POST['isiminti'])){
                     <div class="stulpelis">
                         <div class="nuotraukos">
                             <div class="pagrNuotrauka">
-                                <img src="Nuotraukos/nuotrauka1.jpg" id="pagrNuotrauka" alt="">
+                                <img src="Nuotraukos/<?php echo $row["Filename"]; ?>" id="pagrNuotrauka" alt="">
                             </div>
                             <div class="smallNuotraukos">
-                                <img src="Nuotraukos/nuotrauka1.jpg" alt=""
+                                <img src="Nuotraukos/<?php echo $row["Filename"]; ?>" alt=""
                                 onclick="clickme(this)">
-                                <img src="Nuotraukos/nuotrauka2.jpg" alt=""
+                                <img src="Nuotraukos/<?php echo $row["Filename_second"]; ?>" alt=""
                                 onclick="clickme(this)">
-                                <img src="Nuotraukos/nuotrauka3.jpg" alt=""
-                                onclick="clickme(this)">
-                                <img src="Nuotraukos/nuotrauka4.jpg" alt=""
+                                <img src="Nuotraukos/<?php echo $row["Filename_third"]; ?>" alt=""
                                 onclick="clickme(this)">
                             </div>
                         </div>
                     </div>          
                     <div class="stulpelis stulpelis2">
                         <div class="turinys">
-                            <p class="tipas">Tipas</p>
+                            <p class="tipas"><?php echo $row["kategorija"]; ?></p>
                             <h2><?php echo $row["pavadinimas"]; ?></h2>
                             <p class="kaina"><?php echo $row["kaina"]; ?> €</p>
                             <input type="submit" value="Įsiminti" name="isiminti" class="button">
-                            <p class="prekesInfo"><?php echo $row["aprasas"]; ?>
+                            <span class="error"><?php echo $websiteErr;?></span>
+                            <p class="prekesInfo"><?php echo $row["aprasymas"]; ?>
                             </p>
                             <h3>Susisiekti:</h3>
-                            <p class="TelNr"><?php echo $row["tel_nr"]; ?></p>
+                            <p class="TelNr"><?php echo $row["telefonas"]; ?></p>
+                            <input type="hidden" name="product_nuotrauka" value="<?php echo $row['Filename']; ?>">
                             <input type="hidden" name="product_pavadinimas" value="<?php echo $row['pavadinimas']; ?>">
                             <input type="hidden" name="product_kaina" value="<?php echo $row['kaina']; ?>">
-                            <input type="hidden" name="product_aprasas" value="<?php echo $row['aprasas']; ?>">
-                            <input type="hidden" name="product_tel_nr" value="<?php echo $row['tel_nr']; ?>">
+                            <input type="hidden" name="product_aprasas" value="<?php echo $row['aprasymas']; ?>">
+                            <input type="hidden" name="product_tel_nr" value="<?php echo $row['telefonas']; ?>">
                         </div>
                     </div>
                     <footer class="footer">
