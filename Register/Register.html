@@ -8,7 +8,7 @@
     </head>
 <body>
     <header class="header">
-        <h1 class="logo"><a href="#">Chromas</a></h1>
+        <h1 class="logo"><a href="../main/index.php">Chromas</a></h1>
       <ul class="main-nav">
           <!--<li><a href="#">Prisijungimas</a></li>
           <li><a href="#">Registracija</a></li>
@@ -23,12 +23,12 @@
                 <div class="ivedimo-langas">
                     <span class="ivedimo-info">Vardas</span>
                     <input type="text" id="vardas" class="ivedimo-tekstas" name="vardas" placeholder="Įveskite savo vardą" 
-                    required pattern="[A-Z]{1}[a-z]{1,19}" oninvalid="this.setCustomValidity('Pirma raidė turi būti didžioji. Iki 2 iki 20 simbolių')" oninput="setCustomValidity('')">
+                    required pattern="[A-Z]{1}[a-z]{1,19}" oninvalid="this.setCustomValidity('Pirma raidė turi būti didžioji. Nuo 2 iki 20 simbolių')" oninput="setCustomValidity('')">
                 </div>
                 <div class="ivedimo-langas">
                     <span class="ivedimo-info">Pavardė</span>
                     <input type="text" class="ivedimo-tekstas" name="pavarde" placeholder="Įveskite savo pavardę" 
-                    required pattern="[A-Z]{1}[a-z]{1,19}" oninvalid="this.setCustomValidity('Pirma raidė turi būti didžioji. Iki 2 iki 20 simbolių')" oninput="setCustomValidity('')">
+                    required pattern="[A-Z]{1}[a-z]{1,19}" oninvalid="this.setCustomValidity('Pirma raidė turi būti didžioji. Nuo 2 iki 20 simbolių')" oninput="setCustomValidity('')">
                 </div>
                 <div class="ivedimo-langas">
                     <span class="ivedimo-info">El. paštas</span>
@@ -65,7 +65,7 @@
         
         <!-- Trigger/Open The Modal -->
         <div class="box">
-            <a class="salyguMygtukas" href="#popup1">Peržiūrėti puslapio salygas</a>
+            <a class="salyguMygtukas" href="#popup1">Peržiūrėti svetainės salygas</a>
         </div>
         
         <div id="popup1" class="overlay">
@@ -80,21 +80,38 @@
                     </p>
                     <p>Chromas pasilieka teisę sustabdyti svetainės naudojimą ar apskritai 
                         užblokuoti tam tikro vartotojo prieigą, jei bus pastebėtas 
-                        bet koks piktnaudžiavimas suteiktomis teisėmis. Apie pastebėtą 
-                        piktnaudžiavimą gali būti pranešta atitinkamoms institucijoms. 
-                        Taip pat pasiliekame teisę atskleisti visus įrodymus apie galimą 
-                        piktnaudžiavimą svetaine.
+                        bet koks piktnaudžiavimas suteiktomis teisėmis.  
                     </p> 
+
                     <h4>Naudojimasis svetaine</h4>
                     <p>Jūs sutinkate nenaudoti svetainės arba sustabdyti prieigą prie jos, jei:</p>
-                    <p>· gavote neteisėtą prieigą prie svetainės serverių ar duomenų bazės;</p>
-                    <p>· galite sukelti pavojų svetainės veikimo vientisumui;</p>
-                    <p>· galite sukelti pavojų telekomunikacijų tinklo veikimui, kokybei ir vientisumui;</p>
-                    <p>· neteisėtai siekiate rinkti informaciją apie kitus vartotojus;</p>
-                    <p>· norite platinti, atsiųsti, perduoti medžiagą, kurioje yra virusų ar kitų kenksmingų komponentų;</p>
-                    <p>· norite naudoti patalpintą informaciją komerciniais tikslais.</p>
-                    </div>
-                    </div>
+                    <p>&#8226; gavote neteisėtą prieigą prie svetainės serverių ar duomenų bazės;</p>
+                    <p>&#8226; galite sukelti pavojų svetainės veikimo vientisumui;</p>
+                    <p>&#8226; galite sukelti pavojų telekomunikacijų tinklo veikimui, kokybei ir vientisumui;</p>
+                    <p>&#8226; neteisėtai siekiate rinkti informaciją apie kitus vartotojus;</p>
+                    <p>&#8226; norite platinti, atsiųsti, perduoti medžiagą, kurioje yra virusų ar kitų kenksmingų komponentų;</p>
+                    <p>&#8226; norite naudoti patalpintą informaciją komerciniais tikslais.</p>
+                    
+                    <h4>Naudotojo pateikiama medžiaga</h4>
+                    <p>Įkeliant medžiagą (pvz., duomenis, paveikslėlius ir pan.) į Chromas svetainę, 
+                        jūs, kaip medžiagos pateikėjas, sutinkate ir patvirtinate, kad:
+                    </p>
+                    <p>&#8226; medžiagoje nėra jokio neteisėto turinio, jokios medžiagos, 
+                        kuri laikoma grasinančia, šmeižiančia, 
+                        pažeidžiančia intelektinės &nbsp;&nbsp;&nbsp;nuosavybės teises ar kitaip netinkama skelbti;
+                    </p>
+                    <p>&#8226; prieš įkeldami medžiagą jūs ėmėtės protingų atsargos priemonių 
+                        siekiant aptikti ir pašalinti virusus ar kitus užkratus bei &nbsp;&nbsp;&nbsp;pavojingus elementus;
+                    </p>
+                    <p>&#8226; jūs sutinkate nesiimti jokių teisinių veiksmų prieš Chromas, 
+                        susijusių su jūsų pateikta medžiaga, ir garantuojate, 
+                        kad &nbsp;&nbsp;&nbsp;Chromas nepatirs jokių nuostolių ar žalos su jūsų pateikta medžiaga.
+                    </p>
+
+                    <h4>Naudojimo sąlygų pakeitimai</h4>
+                    <p>Chromas pasilieka teisę bet kuriuo metu keisti šias naudojimo sąlygas 
+                        be išankstinio įspėjimo. Pakeitimai įsigalioja nedelsiant juos paskelbus svetainėje.
+                    </p>
                 </div>
             </div>
         </div>
@@ -121,5 +138,15 @@
         }
         }
         </script>-->
+    <script>
+        function check(input) {
+            if (input.value != document.getElementById('password').value) {
+                input.setCustomValidity('Slaptažodis turi būti vienodas');
+            } else {
+                // input is valid -- reset the error message
+                input.setCustomValidity('');
+            }
+        }
+    </script>
 </body>
 </html>
