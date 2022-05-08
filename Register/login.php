@@ -73,7 +73,7 @@ session_start();
                     // if data is correct - wip
                     $('#error').html("<span class='text-danger'>Data accepted</span>");
                     console.log("succesful")
-                    window.location.href = "home.php";
+                    window.location.href = "/Chromas-main/user_page/vartotojolangas.php";
                 } else {
                     var options = {
                         distance: '40',
