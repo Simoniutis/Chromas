@@ -38,6 +38,7 @@ if (!empty($vardas) || !empty($pavarde) || !empty($el_pastas) ||
             $stmt->close();
 
             $stmt = $conn->prepare($INSERT);
+            $slaptazodis = base64_encode($slaptazodis);
             $stmt->bind_param("sssss", $vardas, $pavarde, $el_pastas, $slaptazodis,
             $tel_nr);
             $stmt->execute();
