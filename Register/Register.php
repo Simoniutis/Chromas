@@ -42,11 +42,13 @@ if (!empty($vardas) || !empty($pavarde) || !empty($el_pastas) ||
             $stmt->bind_param("sssss", $vardas, $pavarde, $el_pastas, $slaptazodis,
             $tel_nr);
             $stmt->execute();
-            echo "Naujas klientas įrašytas sėkmingai";
+            echo "Naujas klientas įrašytas sėkmingai. Būsite nuvesti į prisijungimo puslapį už 5 sekundžių";
+            header( "refresh:5;url=login.php" );
         }
         else
         {
-            echo "Toks paštas jau yra užregistruotas";
+            echo "Toks paštas jau yra užregistruotas. Tuoj jus sugrąžinsime";
+            header( "refresh:5;url=Register.html" );
         }
         $stmt->close();
         $conn->close();
