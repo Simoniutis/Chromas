@@ -199,7 +199,7 @@ a {
     border: 0px;
     background-color: white;
     color: #088000;
-    margin-left: 345px;
+    margin-left: 338px;
     font-size: 13px;
 }
 .salyguMygtukas:hover{
@@ -228,15 +228,19 @@ a {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 30%;
+    width: 50%;
     position: relative;
-    transition: all 5s ease-in-out;
+    transition: all 1s ease-in-out;
   }
   
-  .popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+  .popup h4 {
+    margin-top: 10px;
+    color: #088000;
+    
+  }
+  .popup p {
+    font-family: Calibri;
+    font-size: 18px;
   }
   .popup .close {
     position: absolute;
@@ -258,9 +262,9 @@ a {
   
   @media screen and (max-width: 700px){
     .box{
-      width: 70%;
+      width: 100%;
     }
     .popup{
-      width: 70%;
+      width: 100%;
     }
   }
