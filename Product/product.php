@@ -46,7 +46,7 @@ if(isset($_POST['isiminti'])){
         <title> Prekės langas </title>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="product.css">
+        <link rel="stylesheet" href="product.css?v=<?php echo time(); ?>">
     </head>
 <body>
     <div class="pagrindinis">
@@ -93,9 +93,10 @@ if(isset($_POST['isiminti'])){
                             <input type="submit" value="Įsiminti" name="isiminti" class="button">
                             <span class="error"><?php echo $websiteErr;?></span>
                             <p class="prekesInfo"><?php echo $row["aprasymas"]; ?>
+                            <p class="bukle">Buklė: <?php echo $row["bukle"]; ?>
                             </p>
                             <h3>Susisiekti:</h3>
-                            <p class="TelNr"><?php echo $row["telefonas"]; ?></p>
+                            <p class="TelNrMiestas"><?php echo $row["telefonas"]; ?>&nbsp; — &nbsp;<?php echo $row["miestas"]; ?></p>
                             <input type="hidden" name="product_nuotrauka" value="<?php echo $row['Filename']; ?>">
                             <input type="hidden" name="product_pavadinimas" value="<?php echo $row['pavadinimas']; ?>">
                             <input type="hidden" name="product_kaina" value="<?php echo $row['kaina']; ?>">
