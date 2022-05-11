@@ -1,7 +1,6 @@
 <?php
 $email = $_POST['email'];
 
-// $to_email = 'emilijab10@gmail.com';
 $subject = 'CHROMAS - keisti slaptazodi';
 $body = 'Spauskite nuoroda: http://www.chromas.com/keisti_slaptazodi';
 $headers = 'From:chromas.info@gmail.com';
