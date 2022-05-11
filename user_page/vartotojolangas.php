@@ -79,7 +79,7 @@ include 'config.php';
 	<img id="niclas-illg-wzVQp_NRIHg-unspla_v" src="niclas-illg-wzVQp_NRIHg-unspla_v.png" srcset="niclas-illg-wzVQp_NRIHg-unspla_v.png 1x, niclas-illg-wzVQp_NRIHg-unspla_v@2x.png 2x">
 		
 	<div class="Pagrindinis_puslapis">
-		<button type="button">Pagrindinis puslapis</button>
+		<a href=/Chromas/main/index.php>Pagrindinis puslapis</a>
 	</div>
 </div>
 <script src="profile.php"></script>

@@ -2,11 +2,12 @@
 session_start();
 $connect = mysqli_connect("localhost", "root", "", "chromas");
 $msg='';
+var_dump($_SESSION);
 if(isset($_POST['submit'])){
 	$time=time()-30;
 	$ip_address=getIpAddr();
 	$query=mysqli_query($connect,"select count(*) as total_count from bandymai where bandymo_laikas > $time and ip='$ip_address'");
-   $check_login_row=mysqli_fetch_assoc($query);
+    $check_login_row=mysqli_fetch_assoc($query);
 	$total_count=$check_login_row['total_count'];
   //Checking if the attempt 3, or youcan set the no of attempt her. For now we taking only 3 fail attempted
 	if($total_count==3){
@@ -17,12 +18,14 @@ if(isset($_POST['submit'])){
 		$password=base64_encode($_POST['password']);
     // Coding for login
 		$res=mysqli_query($connect,"select * from klientai where el_pastas='$username' and  slaptazodis='$password'");
+        var_dump($res);
 		if(mysqli_num_rows($res)){
 			$_SESSION['IS_LOGIN']='yes';
+            $foo = $res->fetch_array(MYSQLI_ASSOC);
+            var_dump($foo);
+            $_SESSION['el_pastas'] = $foo["el_pastas"];
 			mysqli_query($connect,"delete from bandymai where ip='$ip_address'");
-			
-     echo "<script>window.location.href='/Chromas-main/user_page/vartotojolangas.php';</script>";
-
+            echo "<script>window.location.href='/Chromas/user_page/vartotojolangas.php';</script>";
 		}else{
 			$total_count++;
 			$rem_attm=3-$total_count;

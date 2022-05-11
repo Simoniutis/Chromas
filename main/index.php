@@ -26,7 +26,7 @@ include 'connection.php';
    
 
 
-    <form action="/Chromas-main/add_item/Chromas_PrekeP.php" method="get">
+    <form action="/Chromas/add_item/Chromas_PrekeP.php" method="get">
         <button class="button button1">Įdėti skelbimą</button>
     </form>
   
@@ -42,10 +42,13 @@ include 'connection.php';
     </svg>
 	
 	<div id="Registracija">
-		<a href = "/Chromas-main/Register/Register.html"> Registracija</a>
+		<a href = "/Chromas/Register/Register.html"> Registracija</a>
 	</div>
 	<div id="Prisijungimas">
-		<a href = "/Chromas-main/Register/login.php"> Prisijungimas</a>
+		<a href = "/Chromas/Register/login.php"> Prisijungimas</a>
+	</div>
+    <div id="Profilis">
+		<a href = "/Chromas/user_page/vartotojolangas.php"> Profilis</a>
 	</div>
 	<div id="Naujausi_skelbimai">
 		<span>Naujausi skelbimai</span>
@@ -63,106 +66,106 @@ include 'connection.php';
 		</rect>
 	</svg>
 	<div id="Transportas">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Kompiuteriai</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Kompiuteriai</a>
 	</div>
 	<div id="Nekilnojamasis_turtas">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Periferija</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Periferija</a>
 	</div>
 	<div id="Darbas_paslaugos">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Namų elektronika</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Namų elektronika</a>
 	</div>
     <div id="Buitis">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Ryšio įranga</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Ryšio įranga</a>
     </div>
 	<div id="Automobilis">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Nešiojami kompiuteriai</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Nešiojami kompiuteriai</a>
 	</div>
     <div id="Automobilis_be">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Staliniai kompiuteriai</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Staliniai kompiuteriai</a>
     </div>
     <div id="Automobilis_ba">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Serveriai</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Serveriai</a>
     </div>
     <div id="Automobilis_bi">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Kompiuterių dalys</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Kompiuterių dalys</a>
     </div>
     <div id="Automobilis_bu">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Kabeliai ir adapteriai</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Kabeliai ir adapteriai</a>
     </div>
     <div id="Automobilis_bq">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Programinė įranga</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Programinė įranga</a>
     </div>
 	<div id="Automobilis_y">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Monitoriai</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Monitoriai</a>
 	</div>
     <div id="Automobilis_bf">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Projektoriai</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Projektoriai</a>
     </div>
     <div id="Automobilis_bb">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Klaviatūros</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Klaviatūros</a>
     </div>
     <div id="Automobilis_bj">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Pelės</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Pelės</a>
     </div>
     <div id="Automobilis_bv">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Ausinės</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Ausinės</a>
     </div>
     <div id="Automobilis_br">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Mikrafonai</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Mikrafonai</a>
     </div>
     <div id="Automobilis_bz">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Spausdintuvai</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Spausdintuvai</a>
     </div>
 
 	<div id="Automobilis_z">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Televizoriai</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Televizoriai</a>
 	</div>
     <div id="Automobilis_bg">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Video aparatūra</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Video aparatūra</a>
     </div>
     <div id="Automobilis_bc">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Kolonėlės</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Kolonėlės</a>
     </div>
     <div id="Automobilis_bk">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Saugos sistemos</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Saugos sistemos</a>
     </div>
     <div id="Automobilis_bw">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Foto įranga</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Foto įranga</a>
     </div>
     <div id="Automobilis_bs">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Elektros įranga</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Elektros įranga</a>
     </div>
 
 
 
 	<div id="Automobilis_">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Mobilieji telefonai</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Mobilieji telefonai</a>
 	</div>
 
 
 
 	<div id="Automobilis_bd">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Išmanieji laikrodžiai</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Išmanieji laikrodžiai</a>
 	</div>
 
 
 
 	<div id="Automobilis_bh">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Maršrutizatoriai</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Maršrutizatoriai</a>
 	</div>
 
 
 
 	<div id="Automobilis_bl">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php">GPS įranga</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php">GPS įranga</a>
 	</div>
 
     <div id="Automobilis_bx">
-        <a href = "/Chromas-main/category_search/Chromas_kategorijos.php">Bevielio ryšio įranga</a>
+        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Bevielio ryšio įranga</a>
     </div>
 
 	<div id="Automobilis_bt">
-		<a href = "/Chromas-main/category_search/Chromas_kategorijos.php"">Komutatoriai</a>
+		<a href = "/Chromas/category_search/Chromas_kategorijos.php"">Komutatoriai</a>
 	</div>
 
 

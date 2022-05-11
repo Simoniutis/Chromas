@@ -25,13 +25,13 @@ error_reporting(0);
     </svg>
 
     <div id="Prisijungimas">
-        <a href = "/Chromas-main/Register/login.php"> Prisijungimas</a>
+        <a href = "/Chromas/Register/login.php"> Prisijungimas</a>
     </div>
     <div id="Registracija">
-        <a href = "/Chromas-main/Register/Register.html"> Registracija</a>
+        <a href = "/Chromas/Register/Register.html"> Registracija</a>
     </div>
 
-    <form action="/Chromas-main/add_item/Chromas_PrekeP.php" method="get">
+    <form action="/Chromas/add_item/Chromas_PrekeP.php" method="get">
         <button class="button button1">Įdėti skelbimą</button>
     </form>
     <div id="Chromas">

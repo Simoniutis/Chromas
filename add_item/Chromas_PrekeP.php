@@ -39,7 +39,7 @@
 
 
     <div id="Chromas">
-        <span>Chromas</span>
+        <a href="/Chromas/main/index.php">Chromas</a>
     </div>
 
     <svg class="Rectangle_1">
