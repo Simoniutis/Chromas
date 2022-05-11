@@ -31,20 +31,15 @@
 	}
 	#Rectangle_1 {
 		fill: rgba(246,255,0,1);
-		stroke: rgba(112,112,112,1);
-		stroke-width: 1px;
-		stroke-linejoin: miter;
-		stroke-linecap: butt;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
 	}
 	.Rectangle_1 {
 		position: absolute;
-		overflow: visible;
-		width: 1920px;
-		height: 140px;
-		left: 0px;
-		top: 79px;
+  		overflow: visible;
+ 		resize: horizontal;
+  		width: 1900px;
+  		height: 140px;
+  		left: 0px;
+  		top: 140px;
 	}
 	#Component_1__1 {
 		position: absolute;
