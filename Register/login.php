@@ -2,7 +2,6 @@
 session_start();
 $connect = mysqli_connect("localhost", "root", "", "chromas");
 $msg='';
-var_dump($_SESSION);
 if(isset($_POST['submit'])){
 	$time=time()-30;
 	$ip_address=getIpAddr();
@@ -18,11 +17,9 @@ if(isset($_POST['submit'])){
 		$password=base64_encode($_POST['password']);
     // Coding for login
 		$res=mysqli_query($connect,"select * from klientai where el_pastas='$username' and  slaptazodis='$password'");
-        var_dump($res);
 		if(mysqli_num_rows($res)){
 			$_SESSION['IS_LOGIN']='yes';
             $foo = $res->fetch_array(MYSQLI_ASSOC);
-            var_dump($foo);
             $_SESSION['el_pastas'] = $foo["el_pastas"];
 			mysqli_query($connect,"delete from bandymai where ip='$ip_address'");
             echo "<script>window.location.href='/Chromas/user_page/vartotojolangas.php';</script>";
