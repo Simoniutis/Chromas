@@ -73,15 +73,22 @@ function getIpAddr(){
                 </div>
                 <div id="error"></div>
                 <p class="form__text">
+                    <a class="form__link" href="./Register.html" id="linkCreateAccount">Kurti naują paskyrą</a>
+                </p>
+                <div class="form-group">
+                  <input type="submit" name="submit" class="form__button" value="Tęsti">
+                </div>
+                <div id="result"><?php echo $msg?></div>
+                <p class="form__text">
                     <a href="#forgot_pswd" class="form__link">Pamiršau slaptažodį</a>
                 </p>
-                <!-- <div class="overlay" id="forgot_pswd">
+                <div class="overlay" id="forgot_pswd">
                     <div class="wrapper">
                         <h2>Keisti slaptažodį</h2>
                         <a href="#" class="close">&times;</a>
                         <div class="content">
                             <div class="container">
-                                <form>
+                                <form method="post">
                                     <p class="form__email--msg">
                                         <a> El. paštu Jums atsiųsime nuorodą, kurią paspaudę 
                                             slaptažodį galėsite pakeisti
@@ -93,19 +100,12 @@ function getIpAddr(){
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <p class="form__text">
-                    <a class="form__link" href="./Register.html" id="linkCreateAccount">Kurti naują paskyrą</a>
-                </p>
-                <div class="form-group">
-                  <input type="submit" name="submit" class="form__button" value="Tęsti">
                 </div>
-                <div id="result"><?php echo $msg?></div>
             </form>
         </div>
     </body>
 </html>
-<!-- 
+
 <script>
     $(document).ready(function(){
     // Sending email if 'Forgot password'
@@ -123,4 +123,4 @@ function getIpAddr(){
         });
     });
 });
-</script> -->
+</script>
