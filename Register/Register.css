@@ -113,6 +113,19 @@ body{
 .turiPaskyra a:active{
     color: #054700;
 }
+.eye{
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 38px;
+    font-size: 20px;
+    color: #054700;
+}
+#hide1{
+    display: none;
+}
+#hide2{
+    display: block;
+}
 /*-------------NAV BARAS------------*/
 .header{
 	display: flex;
