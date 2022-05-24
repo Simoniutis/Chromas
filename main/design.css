@@ -72,6 +72,20 @@
   font-size: 96px;
   color: rgba(13,163,3,1);  
 }
+.Chromas {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  width: 436px;
+  height: 67px;
+  text-align: left;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgba(13,163,3,1);
+}
 #Rectangle_1 {
   fill: rgba(246,255,0,1);
 }

@@ -20,6 +20,9 @@ include 'config.php';
 </head>
 <body>
 <div id="Web_1920__1">
+<div id="Chromas_f">
+        <a href="index.php" color="green"> Chromas </a>
+      </div>
 	<svg class="Rectangle_1">
 		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1920" height="140">
 		</rect>
