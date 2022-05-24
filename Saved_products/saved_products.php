@@ -80,7 +80,7 @@ if(isset($_GET['remove'])){
         </table>
     </section>
     <!--APAČIA-->
-    <footer class="footer">
+    <!--<footer class="footer">
         <h1>Chromas</h1>
         <h2 class="apacia">Tekstas (angl. text, pranc. texte) – duomenys, 
             pateikiami ženklais, simboliais, žodžiais, žodžių junginiais, 
@@ -89,7 +89,7 @@ if(isset($_GET['remove'])){
             prielaidą, jog jie suvokiami skaitytojų, mokančių tam tikrą 
             natūraliąją arba dirbtinę kalbą.
         </h2>
-    </footer>
+    </footer>-->
     
     <!--Refreshinant, nukelia į viršų-->
     <script>  

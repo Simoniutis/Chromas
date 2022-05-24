@@ -11,6 +11,7 @@ if(isset($_POST["submit"]) || isset($vardas) || isset($pavarde) || isset($el_pas
     $pavarde = mysqli_real_escape_string($conn, $_POST["pavarde"]);
     $el_pastas = mysqli_real_escape_string($conn, $_POST["el_pastas"]);
     $slaptazodis = mysqli_real_escape_string($conn, $_POST["slaptazodis"]);
+    $slaptazodis = base64_encode($slaptazodis);
 
     $sql="UPDATE klientai SET vardas='$vardas', pavarde='$pavarde', el_pastas='$el_pastas', slaptazodis='$slaptazodis'  WHERE el_pastas='{$_SESSION["el_pastas"]}'";
     $result=mysqli_query($conn, $sql);

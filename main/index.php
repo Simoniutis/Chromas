@@ -1,5 +1,6 @@
 <?php
 include 'connection.php';
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,20 +14,20 @@ include 'connection.php';
 </head>
 <body>
 <div id="Chromas">
-
+    <a href = "../main/index.php">
      <div id="Chromas_f">
-        <span href="index.php" color="green"> Chromas </span>
+        <span color="green"> Chromas </span>
       </div>
-    
+    </a>
 
 	<svg class="Rectangle_1">
 		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1900" height="140">
 		</rect>
 	</svg>
-   
+    
 
 
-    <form action="/Chromas/add_item/Chromas_PrekeP.php" method="get">
+    <form action="../add_item/Chromas_PrekeP.php" method="get">
         <button class="button button1">Įdėti skelbimą</button>
     </form>
   
@@ -42,14 +43,14 @@ include 'connection.php';
     </svg>
 	
 	<div id="Registracija">
-		<a href = "/Chromas/Register/Register.html"> Registracija</a>
+		<a href = "../Register/Register.html"> Registracija</a>
 	</div>
 	<div id="Prisijungimas">
-		<a href = "/Chromas/Register/login.php"> Prisijungimas</a>
+		<a href = "../Register/login.php"> Prisijungimas</a>
 	</div>
-    <div id="Profilis">
-		<a href = "/Chromas/user_page/vartotojolangas.php"> Profilis</a>
-	</div>
+    <div id="Kontaktai">
+        <a href = "../contacts/"> Kontaktai</a>
+    </div>
 	<div id="Naujausi_skelbimai">
 		<span>Naujausi skelbimai</span>
 	</div>
@@ -66,107 +67,98 @@ include 'connection.php';
 		</rect>
 	</svg>
 	<div id="Transportas">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Kompiuteriai</a>
+		<a href = "" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Kompiuteriai</a>
 	</div>
 	<div id="Nekilnojamasis_turtas">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Periferija</a>
+		<a href = "" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Periferija</a>
 	</div>
 	<div id="Darbas_paslaugos">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Namų elektronika</a>
+		<a href = "" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Namų elektronika</a>
 	</div>
     <div id="Buitis">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Ryšio įranga</a>
+        <a href = "" style = "color:rgba(13,163,3,1)"onmouseover="this.style.color='rgb(9, 90, 3)'" onmouseout="this.style.color='rgba(13,163,3,1)'">Ryšio įranga</a>
     </div>
 	<div id="Automobilis">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Nešiojami kompiuteriai</a>
+		<a href = "../category_search/Chromas_kategorijos.php?category=Nešiojami kompiuteriai">Nešiojami kompiuteriai</a>
 	</div>
     <div id="Automobilis_be">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Staliniai kompiuteriai</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Staliniai kompiuteriai">Staliniai kompiuteriai</a>
     </div>
-    <div id="Automobilis_ba">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Serveriai</a>
-    </div>
+
     <div id="Automobilis_bi">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Kompiuterių dalys</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Kompiuterių dalys">Kompiuterių dalys</a>
     </div>
     <div id="Automobilis_bu">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Kabeliai ir adapteriai</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Kabeliai ir adapteriai">Kabeliai ir adapteriai</a>
     </div>
     <div id="Automobilis_bq">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Programinė įranga</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Programinė įranga">Programinė įranga</a>
     </div>
 	<div id="Automobilis_y">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Monitoriai</a>
+		<a href = "../category_search/Chromas_kategorijos.php?category=Monitoriai">Monitoriai</a>
 	</div>
     <div id="Automobilis_bf">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Projektoriai</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Projektoriai">Projektoriai</a>
     </div>
     <div id="Automobilis_bb">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Klaviatūros</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Klaviatūros">Klaviatūros</a>
     </div>
     <div id="Automobilis_bj">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Pelės</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Pelės">Pelės</a>
     </div>
     <div id="Automobilis_bv">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Ausinės</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Ausinės">Ausinės</a>
     </div>
     <div id="Automobilis_br">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Mikrafonai</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Mikrafonai">Mikrafonai</a>
     </div>
-    <div id="Automobilis_bz">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Spausdintuvai</a>
+    <div id="Automobilis_ba">
+        <a href = "../category_search/Chromas_kategorijos.php?category=Serveriai">Serveriai</a>
     </div>
 
 	<div id="Automobilis_z">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Televizoriai</a>
+		<a href = "../category_search/Chromas_kategorijos.php?category=Televizoriai">Televizoriai</a>
 	</div>
     <div id="Automobilis_bg">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Video aparatūra</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Video aparatūra">Video aparatūra</a>
     </div>
     <div id="Automobilis_bc">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Kolonėlės</a>
-    </div>
-    <div id="Automobilis_bk">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Saugos sistemos</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Kolonėlės">Kolonėlės</a>
     </div>
     <div id="Automobilis_bw">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Foto įranga</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Foto įranga">Foto įranga</a>
     </div>
     <div id="Automobilis_bs">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Elektros įranga</a>
+        <a href = "../category_search/Chromas_kategorijos.php?category=Elektros įranga">Elektros įranga</a>
     </div>
 
 
-
+    <div id="Automobilis_bk">
+        <a href = "../category_search/Chromas_kategorijos.php?category=Saugos sistemos">Saugos sistemos</a>
+    </div>
 	<div id="Automobilis_">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Mobilieji telefonai</a>
+		<a href = "../category_search/Chromas_kategorijos.php?category=Mobilieji telefonai">Mobilieji telefonai</a>
 	</div>
 
 
 
 	<div id="Automobilis_bd">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Išmanieji laikrodžiai</a>
+		<a href = "../category_search/Chromas_kategorijos.php?category=Išmanieji laikrodžiai">Išmanieji laikrodžiai</a>
 	</div>
 
 
 
 	<div id="Automobilis_bh">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php">Maršrutizatoriai</a>
+		<a href = "../category_search/Chromas_kategorijos.php?category=Maršrutizatoriai">Maršrutizatoriai</a>
 	</div>
 
 
 
 	<div id="Automobilis_bl">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php">GPS įranga</a>
+		<a href = "../category_search/Chromas_kategorijos.php?category=GPS įranga">GPS įranga</a>
 	</div>
 
-    <div id="Automobilis_bx">
-        <a href = "/Chromas/category_search/Chromas_kategorijos.php">Bevielio ryšio įranga</a>
-    </div>
 
-	<div id="Automobilis_bt">
-		<a href = "/Chromas/category_search/Chromas_kategorijos.php"">Komutatoriai</a>
-	</div>
 
 
 
@@ -185,17 +177,18 @@ include 'connection.php';
     $query_results = mysqli_num_rows($result);
     if ($query_results > 0){
         while($row = mysqli_fetch_assoc($result)){
-            echo "<img class = 'unnamed' src = '/add_item/uploads/".$row['Filename']."'>";
+            echo "<img class = 'unnamed' src = '../add_item/uploads/".$row['Filename']."'>";
         }
     }
     ?>
     <?php
+
     $sql = "SELECT * FROM prekes_ikelimas order by id desc limit 1 offset 1";
     $result = mysqli_query($conn, $sql);
     $query_results = mysqli_num_rows($result);
     if ($query_results > 0){
         while($row = mysqli_fetch_assoc($result)){
-            echo "<img class = 'unnamed_cv' src = '/add_item/uploads/".$row['Filename']."'>";
+            echo "<img class = 'unnamed_cv' src = '../add_item/uploads/".$row['Filename']."'>";
         }
     }
     ?>
@@ -205,7 +198,7 @@ include 'connection.php';
     $query_results = mysqli_num_rows($result);
     if ($query_results > 0){
         while($row = mysqli_fetch_assoc($result)){
-            echo "<img class = 'unnamed_cw' src = '/add_item/uploads/".$row['Filename']."'>";
+            echo "<img class = 'unnamed_cw' src = '../add_item/uploads/".$row['Filename']."'>";
         }
     }
     ?>
@@ -221,7 +214,7 @@ LIMIT 1 offset 3";
     $query_results = mysqli_num_rows($result);
     if ($query_results > 0){
         while($row = mysqli_fetch_assoc($result)){
-            echo "<img class = 'unnamed_cx' src = '/add_item/uploads/".$row['Filename']."'>";
+            echo "<img class = 'unnamed_cx' src = '../add_item/uploads/".$row['Filename']."'>";
         }
     }
     ?>
@@ -237,7 +230,7 @@ LIMIT 1 OFFSET 4";
     $query_results = mysqli_num_rows($result);
     if ($query_results > 0){
         while($row = mysqli_fetch_assoc($result)){
-            echo "<img class = 'unnamed_cy' src = '/add_item/uploads/".$row['Filename']."'>";
+            echo "<img class = 'unnamed_cy' src = '../add_item/uploads/".$row['Filename']."'>";
         }
     }
     ?>
@@ -253,7 +246,7 @@ LIMIT 1 offset 5";
     $query_results = mysqli_num_rows($result);
     if ($query_results > 0){
         while($row = mysqli_fetch_assoc($result)){
-            echo "<img class = 'unnamed_cz' src = '/add_item/uploads/".$row['Filename']."'>";
+            echo "<img class = 'unnamed_cz' src = '../add_item/uploads/".$row['Filename']."'>";
         }
     }
     ?>
@@ -269,7 +262,7 @@ LIMIT 1 offset 6";
     $query_results = mysqli_num_rows($result);
     if ($query_results > 0){
         while($row = mysqli_fetch_assoc($result)){
-            echo "<img class = 'unnamed_c' src = '/add_item/uploads/".$row['Filename']."'>";
+            echo "<img class = 'unnamed_c' src = '../add_item/uploads/".$row['Filename']."'>";
         }
     }
     ?>
@@ -345,8 +338,8 @@ LIMIT 1 offset 6";
 	</svg>
 
     <input type="image" name="paieska" alt=""
-           src="https://cdn.icon-icons.com/icons2/2551/PNG/512/search_icon_152764.png">
-    <form action="search.php" metod="get">
+           src="../add_item/uploads/search_icon_152764.png">
+    <form action="../category_search/search.php" metod="get">
         <div class="autocomplete">
             <input type="text" name="search" placeholder="Paieška" >
         </div>

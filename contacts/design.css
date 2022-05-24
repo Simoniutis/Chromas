@@ -15,20 +15,109 @@
   box-sizing: border-box;
   border: none;
 }
-#Kontaktai {
-  left: 1340px;
-  top: 100px;
-  position: absolute;
-  overflow: visible;
-  width: 246px;
-  height: 33px;
-  text-align: left;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  color: rgba(0,0,0,1);
-}
+#Rectangle_7 {
+		fill: rgba(240,240,240,1);
+	}
+	.Rectangle_7 {
+		position: absolute;
+		overflow: visible;
+		width: 1190px;
+		height: 700px;
+		left: 355px;
+		top: 350px;
+	}
+#Apie_mus {
+		left: 425px;
+		top: 393px;
+		position: absolute;
+		overflow: visible;
+		width: 221px;
+		height: 56px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		color: rgba(0,0,0,1);
+	}
+	#Kontaktaik {
+		left: 425px;
+		top: 694px;
+		position: absolute;
+		overflow: visible;
+		width: 221px;
+		height: 56px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		color: rgba(0,0,0,1);
+	}
+	#Chromas_yra_skelbim_svetain_ku {
+		left: 460px;
+		top: 486px;
+		position: absolute;
+		overflow: visible;
+		width: 981px;
+		height: 173px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(0,0,0,1);
+	}
+	#Chromas_El_patas_infochromaslt {
+		left: 460px;
+		top: 787px;
+		position: absolute;
+		overflow: hidden;
+		width: 981px;
+		height: 222px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(0,0,0,1);
+	}
+	#Line_1 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_1 {
+		overflow: visible;
+		position: absolute;
+		width: 245px;
+		height: 1px;
+		left: 420px;
+		top: 455px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Line_2 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_2 {
+		overflow: visible;
+		position: absolute;
+		width: 245px;
+		height: 1px;
+		left: 420px;
+		top: 744px;
+		transform: matrix(1,0,0,1,0,0);
+	}
 .button {
     border: none;
     color: white;
@@ -85,20 +174,6 @@
   font-weight: normal;
   font-size: 96px;
   color: rgba(13,163,3,1);  
-}
-.Chromas {
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  overflow: visible;
-  width: 436px;
-  height: 67px;
-  text-align: left;
-  font-family: Segoe UI;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  color: rgba(13,163,3,1);
 }
 #Rectangle_1 {
   fill: rgba(246,255,0,1);
@@ -193,6 +268,7 @@
   font-size: 30px;
   color: rgba(0,0,0,1);
 }
+
 #Prisijungimas {
   left: 1500px;
   top: 100px;
@@ -207,6 +283,21 @@
   font-size: 30px;
   color: #000000;
 }
+#Kontaktai {
+  left: 1340px;
+  top: 100px;
+  position: absolute;
+  overflow: visible;
+  width: 246px;
+  height: 33px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(0,0,0,1);
+}
+
 a:link {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -250,18 +341,7 @@ a:link {
   left: 0px;
   top: 630px;
 }
-#Rectangle_7 {
-  opacity: 0.3;
-  fill: rgba(231,231,231,1);
-}
-.Rectangle_7 {
-  position: absolute;
-  overflow: visible;
-  width: 1900px;
-  height: 245px;
-  left: 0px;
-  top: 385px;
-}
+
 #Transportas {
   left: 171px;
   top: 700px;

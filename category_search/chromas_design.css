@@ -27,6 +27,20 @@
     --web-enable-deep-linking: true;
     zoom: 79.95%;
 }
+#Kontaktai {
+  left: 1340px;
+  top: 100px;
+  position: absolute;
+  overflow: visible;
+  width: 246px;
+  height: 33px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(0,0,0,1);
+}
 #Rectangle_1 {
     fill: rgba(239,239,25,1);
 }
@@ -68,20 +82,6 @@
     font-size: 30px;
     color: rgba(0,0,0,1);
     text-decoration: none;
-}
-#Profilis {
-  left: 1292.607px;
-  top: 100px;
-  position: absolute;
-  overflow: visible;
-  width: 181px;
-  height: 33px;
-  text-align: left;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  color: #000000;
 }
 a:link{
     color:black;

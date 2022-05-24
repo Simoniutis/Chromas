@@ -38,17 +38,19 @@
 <div id="Web_1920__1">
 
 
-    <div id="Chromas">
-        <a href="/Chromas/main/index.php">Chromas</a>
-    </div>
-
+    <a href = "../main/index.php">
+        <div id="Chromas">
+            <span>Chromas</span>
+        </div>
+    </a>
+   
     <svg class="Rectangle_1">
         <rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1900" height="140">
         </rect>
     </svg>
     <input type="image" name="paieska" alt=""
-           src="https://cdn.icon-icons.com/icons2/2551/PNG/512/search_icon_152764.png">
-    <form action="search.php" metod="get">
+           src="../add_item/uploads/search_icon_152764.png">
+    <form action="../category_search/search.php" metod="get">
         <div class="autocomplete">
             <input type="text99" name="search" placeholder="Paieška" >
         </div>
@@ -90,12 +92,12 @@
 	<div class = "image-preview2" id="image-preview2">
 		<img id="uploadPreview2" style="width: 400px; height: 200px;" />
 	</div>
-    <form action = "/Mano/main/index.php"" method="post">
+    <form action = "../main/index.php"" method="post">
         <button class="button button2" name="atsaukti" >Atšaukti</button>
     </form>
 
 	<form class="" action="item.php" method="post" autocomplete="off" enctype="multipart/form-data">
-
+        
         <button class="button button1" name="patvirtinti">Įkelti prekę</button>
 
 
@@ -112,12 +114,26 @@
                       oninput="this.setCustomValidity('')"></textarea>
 			<select class = "dropdown" name="kategorija" required>
                 <option value = "" selected></option>
-		    	<option value = "Kompiuteris" >Kompiuteris</option>
-		    	<option value = "Pelė">Pelė</option>
-		    	<option value = "Monitorius" >Monitorius</option>
-		    	<option value = "Kolonėlė" >Kolonėlė</option>
-		    	<option value = "Kabelis">Kabelis</option>
-		    	<option value = "Pultas">Pultas</option>
+		    	<option value = "Nešiojami kompiuteriai" >Nešiojami kompiuteriai</option>
+		    	<option value = "Staliniai kompiuteriai">Staliniai kompiuteriai</option>
+		    	<option value = "Kompiuterių dalys" >Kompiuterių dalys</option>
+		    	<option value = "Kabeliai ir adapteriai" >Kabeliai ir adapteriai</option>
+		    	<option value = "Programinė įranga">Programinė įranga</option>
+		    	<option value = "Monitoriai">Monitoriai</option>
+                <option value = "Projektoriai" >Projektoriai</option>
+                <option value = "Klaviatūros">Klaviatūros</option>
+                <option value = "Pelės" >Pelės</option>
+                <option value = "Ausinės" >Ausinės</option>
+                <option value = "Mikrafonai">Mikrafonai</option>
+                <option value = "Televizoriai">Televizoriai</option>
+                <option value = "Video aparatūra" >Video aparatūra</option>
+                <option value = "Kolonėlės">Kolonėlės</option>
+                <option value = "Foto įranga" >Foto įranga</option>
+                <option value = "Elektros įranga" >Elektros įranga</option>
+                <option value = "Mobilieji telefonai">Mobilieji telefonai</option>
+                <option value = "Maršrutizatoriai">Maršrutizatoriai</option>
+                <option value = "Išmanieji laikrodžiai">Išmanieji laikrodžiai</option>
+                <option value = "GPS įranga">GPS įranga</option>
 			</select>
             <select class = "dropdown1" name ="bukle" required>
                 <option value = "" selected></option>

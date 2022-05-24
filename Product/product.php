@@ -56,7 +56,7 @@ if(isset($_POST['isiminti'])){
             <ul class="main-nav">
                 <li><a href="../saved_products/saved_products.php" class="nav1">Įsimintos prekės</a></li>
                 <li><a href="../user_page/vartotojolangas.php"><i class="fa fa-user-circle"></i></a></li>
-                <li><a href="logout.php">logout</i></a></li>
+                <li><a href="logout.php" class="nav1">Atsijungti</a></li>
                 <!--<li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>-->
             </ul>
@@ -104,7 +104,7 @@ if(isset($_POST['isiminti'])){
                             <input type="hidden" name="product_tel_nr" value="<?php echo $row['telefonas']; ?>">
                         </div>
                     </div>
-                    <footer class="footer">
+                    <!--<footer class="footer">
                         <h1>Chromas</h1>
                         <h2 class="apacia">Tekstas (angl. text, pranc. texte) – duomenys, 
                             pateikiami ženklais, simboliais, žodžiais, žodžių junginiais, 
@@ -113,7 +113,7 @@ if(isset($_POST['isiminti'])){
                             prielaidą, jog jie suvokiami skaitytojų, mokančių tam tikrą 
                             natūraliąją arba dirbtinę kalbą.
                         </h2>
-                    </footer>
+                    </footer>-->
                 </div>
                 </form>
                 <?php

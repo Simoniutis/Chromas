@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title> Registracijos langas </title>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="Register.css">
     </head>
 <body>
@@ -23,12 +24,12 @@
                 <div class="ivedimo-langas">
                     <span class="ivedimo-info">Vardas</span>
                     <input type="text" id="vardas" class="ivedimo-tekstas" name="vardas" placeholder="Įveskite savo vardą" 
-                    required pattern="[A-Z]{1}[a-z]{1,19}" oninvalid="this.setCustomValidity('Pirma raidė turi būti didžioji. Nuo 2 iki 20 simbolių')" oninput="setCustomValidity('')">
+                    required pattern="[A-ZĄČĘĖĮŠŲŪŽ]{1}[a-ząčęėįšųūž]{1,19}" oninvalid="this.setCustomValidity('Pirma raidė turi būti didžioji. Nuo 2 iki 20 simbolių')" oninput="setCustomValidity('')">
                 </div>
                 <div class="ivedimo-langas">
                     <span class="ivedimo-info">Pavardė</span>
                     <input type="text" class="ivedimo-tekstas" name="pavarde" placeholder="Įveskite savo pavardę" 
-                    required pattern="[A-Z]{1}[a-z]{1,19}" oninvalid="this.setCustomValidity('Pirma raidė turi būti didžioji. Nuo 2 iki 20 simbolių')" oninput="setCustomValidity('')">
+                    required pattern="[A-ZĄČĘĖĮŠŲŪŽ]{1}[a-ząčęėįšųūž]{1,19}" oninvalid="this.setCustomValidity('Pirma raidė turi būti didžioji. Nuo 2 iki 20 simbolių')" oninput="setCustomValidity('')">
                 </div>
                 <div class="ivedimo-langas">
                     <span class="ivedimo-info">El. paštas</span>
@@ -36,13 +37,19 @@
                     required pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+[.][a-z]+" oninvalid="this.setCustomValidity('Neteisingas paštas. Pavyzdys: vardenisPavardenis1@pastas.com')" oninput="setCustomValidity('')">
                 </div>
                 <div class="ivedimo-langas">
-                    <span class="ivedimo-info">Slaptažodis</span>
-                    <input type="text" id="password" class="ivedimo-tekstas" name="slaptazodis" placeholder="Įveskite savo slaptažodį" 
+                    <span class="ivedimo-info">Slaptažodis
+                        <span class="eye" onclick="seePassword()">
+                            <i id="hide1" class="fa fa-eye"></i> 
+                            <i id="hide2" class="fa fa-eye-slash"></i>
+                        </span>
+                    </span>
+                    <input type="password" id="password" class="ivedimo-tekstas" name="slaptazodis" placeholder="Įveskite savo slaptažodį" 
                     required pattern="[a-zA-Z0-9]{5,15}" oninvalid="this.setCustomValidity('Galima naudoti didžiąsias ir mažąsias raides, skaičius. Nuo 5 iki 15 simbolių')" oninput="setCustomValidity('')">
+                    
                 </div>
                 <div class="ivedimo-langas">
                     <span class="ivedimo-info">Slaptažodžio pakartojimas</span>
-                    <input type="text" class="ivedimo-tekstas" placeholder="Pakartokite savo slaptažodį" 
+                    <input type="password" class="ivedimo-tekstas" placeholder="Pakartokite savo slaptažodį" 
                     required pattern="[a-zA-Z0-9]{5,15}" oninvalid="check(this)">
                 </div>
                 <div class="ivedimo-langas">
@@ -145,6 +152,23 @@
             } else {
                 // input is valid -- reset the error message
                 input.setCustomValidity('');
+            }
+        }
+
+        function seePassword(){
+            var x = document.getElementById("password");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else{
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
             }
         }
     </script>

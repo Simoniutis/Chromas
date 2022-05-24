@@ -2,7 +2,6 @@
 session_start();
 $connect = mysqli_connect("localhost", "root", "", "chromas");
 $msg='';
-var_dump($_SESSION);
 if(isset($_POST['submit'])){
 	$time=time()-30;
 	$ip_address=getIpAddr();
@@ -18,12 +17,11 @@ if(isset($_POST['submit'])){
 		$password=base64_encode($_POST['password']);
     // Coding for login
 		$res=mysqli_query($connect,"select * from klientai where el_pastas='$username' and  slaptazodis='$password'");
-        var_dump($res);
 		if(mysqli_num_rows($res)){
 			$_SESSION['IS_LOGIN']='yes';
             $foo = $res->fetch_array(MYSQLI_ASSOC);
-            var_dump($foo);
             $_SESSION['el_pastas'] = $foo["el_pastas"];
+            $_SESSION['user_id'] = $foo["id_klientas"];
 			mysqli_query($connect,"delete from bandymai where ip='$ip_address'");
             echo "<script>window.location.href='/Chromas/user_page/vartotojolangas.php';</script>";
 		}else{
@@ -76,15 +74,22 @@ function getIpAddr(){
                 </div>
                 <div id="error"></div>
                 <p class="form__text">
+                    <a class="form__link" href="./Register.html" id="linkCreateAccount">Kurti naują paskyrą</a>
+                </p>
+                <div class="form-group">
+                  <input type="submit" name="submit" class="form__button" value="Tęsti">
+                </div>
+                <div id="result"><?php echo $msg?></div>
+                <p class="form__text">
                     <a href="#forgot_pswd" class="form__link">Pamiršau slaptažodį</a>
                 </p>
-                <!-- <div class="overlay" id="forgot_pswd">
+                <div class="overlay" id="forgot_pswd">
                     <div class="wrapper">
                         <h2>Keisti slaptažodį</h2>
                         <a href="#" class="close">&times;</a>
                         <div class="content">
                             <div class="container">
-                                <form>
+                                <form method="post">
                                     <p class="form__email--msg">
                                         <a> El. paštu Jums atsiųsime nuorodą, kurią paspaudę 
                                             slaptažodį galėsite pakeisti
@@ -96,19 +101,12 @@ function getIpAddr(){
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <p class="form__text">
-                    <a class="form__link" href="./Register.html" id="linkCreateAccount">Kurti naują paskyrą</a>
-                </p>
-                <div class="form-group">
-                  <input type="submit" name="submit" class="form__button" value="Tęsti">
                 </div>
-                <div id="result"><?php echo $msg?></div>
             </form>
         </div>
     </body>
 </html>
-<!-- 
+
 <script>
     $(document).ready(function(){
     // Sending email if 'Forgot password'
@@ -126,4 +124,4 @@ function getIpAddr(){
         });
     });
 });
-</script> -->
+</script>

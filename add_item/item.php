@@ -34,7 +34,9 @@ if(isset($_POST['patvirtinti'])){
                    '$bukle', '$kaina', '$telefonas', '$miestas', '$adresas', '$filename', '$aprasymas', '$filename_second', '$filename_third')";
                     $run = mysqli_query($conn, $query) or die(mysqli_error());
                     if ($run) {
-                        echo "<script> location.href='http://localhost/Mano/main/index.php'; </script>";
+                       
+                        echo '<script>alert("Prekė sėkmingai buvo patalpinta")</script>';
+                        echo "<script> location.href='http://localhost/Chromas-main/main/index.php'; </script>";
                         exit;
                         
                     } else {
