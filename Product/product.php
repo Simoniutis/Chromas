@@ -56,7 +56,7 @@ if(isset($_POST['isiminti'])){
             <ul class="main-nav">
                 <li><a href="../saved_products/saved_products.php" class="nav1">Įsimintos prekės</a></li>
                 <li><a href="../user_page/vartotojolangas.php"><i class="fa fa-user-circle"></i></a></li>
-                <li><a href="logout.php">logout</i></a></li>
+                <li><a href="logout.php" class="nav1">Atsijungti</a></li>
                 <!--<li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>-->
             </ul>
