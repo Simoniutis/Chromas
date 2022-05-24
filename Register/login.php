@@ -21,6 +21,7 @@ if(isset($_POST['submit'])){
 			$_SESSION['IS_LOGIN']='yes';
             $foo = $res->fetch_array(MYSQLI_ASSOC);
             $_SESSION['el_pastas'] = $foo["el_pastas"];
+            $_SESSION['user_id'] = $foo["id_klientas"];
 			mysqli_query($connect,"delete from bandymai where ip='$ip_address'");
             echo "<script>window.location.href='/Chromas/user_page/vartotojolangas.php';</script>";
 		}else{
