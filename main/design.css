@@ -29,6 +29,34 @@
   font-size: 30px;
   color: rgba(0,0,0,1);
 }
+#Pagalba {
+  left: 1132.607px;
+  top: 100px;
+  position: absolute;
+  overflow: visible;
+  width: 246px;
+  height: 33px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(0,0,0,1);
+}
+#Profilis {
+  left: 925.214px;
+  top: 100px;
+  position: absolute;
+  overflow: visible;
+  width: 246px;
+  height: 33px;
+  text-align: left;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgba(0,0,0,1);
+}
 .button {
     border: none;
     color: white;

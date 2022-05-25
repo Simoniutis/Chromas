@@ -51,6 +51,12 @@ include 'connection.php';
     <div id="Kontaktai">
         <a href = "../contacts/"> Kontaktai</a>
     </div>
+    <div id="Pagalba">
+		<a href = "../support/index.php"> Pagalba </a>
+	</div>
+    <div id="Profilis">
+		<a href = "../user_page/vartotojolangas.php"> Profilis </a>
+	</div>
 	<div id="Naujausi_skelbimai">
 		<span>Naujausi skelbimai</span>
 	</div>
